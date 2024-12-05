@@ -1,0 +1,50 @@
+{
+  "name": "tanmaymain",
+  "displayName": "tanmaymain",
+  "description": "fav",
+  "publisher": "TanmayShukla",
+  "license": "UNLICENSED",
+  
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "main": "./src/extension.js",
+    "contributes": {
+        "themes": [
+            {
+                "label": "neon glow theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/tanmayglow-color-theme.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "synthwave84.enableNeon",
+                "title": "Synthwave '84: Enable Neon Dreams"
+            },
+            {
+                "command": "synthwave84.disableNeon",
+                "title": "Synthwave '84: Disable Neon Dreams"
+            }
+        ],
+        "configuration": {
+            "title": "Synthwave '84",
+            "properties": {
+                "synthwave84.brightness": {
+                    "type": "number",
+                    "default": 0.45,
+                    "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
+                },
+                "synthwave84.disableGlow": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Disable the glow effect, but show Synthwave '84 editor chrome updates"
+                }
+            }
+        }
+    }
+}

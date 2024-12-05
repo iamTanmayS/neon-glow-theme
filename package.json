@@ -32,7 +32,7 @@
             }
         ],
         "configuration": {
-            "title": "Synthwave '84",
+            "title": "neon glow theme",
             "properties": {
                 "synthwave84.brightness": {
                     "type": "number",
